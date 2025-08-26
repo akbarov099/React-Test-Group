@@ -32,20 +32,20 @@ export const Login = () => {
   };
 
   return (
-      <form onSubmit={handleLogin}>
-        <h1>Login</h1>
-        <hr style={{width}} />
-        <input
-          onChange={(e) => setUsername(e.target.value)}
-          type="text"
-          placeholder="username"
-        />
-        <input
-          onChange={(e) => setPassword(e.target.value)}
-          type="password"
-          placeholder="password"
-        />
-        <button>Login</button>
-      </form>
+    <form onSubmit={handleLogin}>
+      <h1>Login</h1>
+      <hr />
+      <input
+        onChange={(e) => setUsername(e.target.value)}
+        type="text"
+        placeholder="username"
+      />
+      <input
+        onChange={(e) => setPassword(e.target.value)}
+        type="password"
+        placeholder="password"
+      />
+      <button>Login</button>
+    </form>
   );
 };
